@@ -15,8 +15,8 @@ import (
 var (
 	WINDOW *pixelgl.Window // Not a constant, but its close enough (constant in action no definition)
 
-	win_size        = pixel.Vec{1024, 768}
-	win_origin      = pixel.Vec{0, 0}
+	win_size        = pixel.Vec{X: 1024, Y: 768}
+	win_origin      = pixel.Vec{X: 0, Y: 0}
 	win_vsync  bool = false
 
 	current_time time.Time = time.Now()
@@ -113,9 +113,9 @@ func refreshDeltaTime() float64 {
 func gameLoop() {
 	createWindow()
 
-	glep := createEntity("images/glep.png", WINDOW.Bounds().Center(), 0.0, pixel.Vec{2.0, 2.0})
-	dvd := createEntity("images/dvd.png", pixel.Vec{win_size.X - 96, 96}, 0.0, pixel.Vec{2.0, 2.0})
-	title := createEntity("images/titlepage.png", WINDOW.Bounds().Center(), 0.0, pixel.Vec{1.0, 1.0})
+	glep := createEntity("images/glep.png", WINDOW.Bounds().Center(), 0.0, pixel.Vec{X: 2.0, Y: 2.0})
+	dvd := createEntity("images/dvd.png", pixel.Vec{X: win_size.X - 96, Y: 96}, 0.0, pixel.Vec{X: 2.0, Y: 2.0})
+	title := createEntity("images/titlepage.png", WINDOW.Bounds().Center(), 0.0, pixel.Vec{X: 1.0, Y: 1.0})
 
 	for !WINDOW.Closed() {
 		deltaTime := refreshDeltaTime()
