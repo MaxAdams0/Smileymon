@@ -2,11 +2,11 @@
 ### Soon
 - ~~Rendering sprites~~ 5/27/24
 - ~~Sprite Transform~~ 5/28/24
-- Movement (Kb & mouse input)
-- Static UI
-### Eventually (maybe)
+- ~~Movement (Kb & mouse input)~~ 5/29/24
+- ~~Static UI~~ 5/29/24
 - Interactable UI (text popups, buttons, diologue)
 - Title Screen & Settings
+### Eventually (maybe)
 - Friends
     - New sprites
     - Xp & leveling
