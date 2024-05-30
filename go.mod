@@ -3,8 +3,9 @@ module github.com/MaxAdams0/Smileymon
 go 1.21
 
 require (
+	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
 	github.com/gopxl/pixel v1.0.0
-	golang.org/x/image v0.13.0
+	golang.org/x/image v0.16.0
 )
 
 require (
